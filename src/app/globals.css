@@ -1,0 +1,188 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Luma brand colors */
+  --luma-primary: #3157f6;
+  --luma-primary-hover: #1735e3;
+  --luma-navy: #202640;
+
+  /* Accent colors */
+  --luma-yellow: #fff0a8;
+  --luma-yellow-secondary: #ffee7e;
+  --luma-peach: #ffb995;
+
+  /* Background and surfaces */
+  --luma-background: #f9f8f3;
+  --luma-surface: #f2f1ec;
+  --luma-white: #ffffff;
+  --luma-white-secondary: #e7e7ec;
+
+  /* Text */
+  --luma-text-primary: #25293a;
+  --luma-text-secondary: #656770;
+
+  /* Borders */
+  --luma-border: #e8e8e4;
+
+  /* Typography */
+  --luma-font-primary: var(--font-inter);
+
+  /* Layout */
+  --container-max-width: 1280px;
+  --page-padding: 24px;
+
+  /* Radius */
+  --luma-radius-sm: 8px;
+  --luma-radius-md: 12px;
+  --luma-radius-lg: 20px;
+  --luma-radius-xl: 28px;
+  --luma-radius-full: 9999px;
+
+  /* Shadows */
+  --luma-shadow-card: 0 4px 20px rgb(32 38 64 / 6%);
+  --luma-shadow-button: 0 4px 12px rgb(49 84 245 / 18%);
+
+  /* shadcn semantic colors */
+  --background: var(--luma-background);
+  --foreground: var(--luma-text-primary);
+
+  --card: var(--luma-white);
+  --card-foreground: var(--luma-text-primary);
+
+  --popover: var(--luma-white);
+  --popover-foreground: var(--luma-text-primary);
+
+  --primary: var(--luma-primary);
+  --primary-foreground: var(--luma-white);
+
+  --secondary: var(--luma-surface);
+  --secondary-foreground: var(--luma-text-primary);
+
+  --muted: var(--luma-surface);
+  --muted-foreground: var(--luma-text-secondary);
+
+  --accent: var(--luma-yellow);
+  --accent-foreground: var(--luma-navy);
+
+  --destructive: oklch(0.577 0.245 27.325);
+
+  --border: var(--luma-border);
+  --input: var(--luma-border);
+  --ring: var(--luma-primary);
+
+  /* shadcn radius */
+  --radius: 0.75rem;
+
+  /* Hero decorative colors */
+  --luma-hero-orange: #fed7aa;
+  --luma-hero-indigo: #e0e7ff;
+  --luma-hero-indigo-strong: #4f46e5;
+  --luma-hero-rating: #facc15;
+  --luma-hero-neutral: #171717;
+}
+
+@theme inline {
+  /* Brand colors */
+  --color-brand: var(--luma-primary);
+  --color-brand-hover: var(--luma-primary-hover);
+  --color-navy: var(--luma-navy);
+
+  /* Accent colors */
+  --color-yellow: var(--luma-yellow);
+  --color-yellow-secondary: var(--luma-yellow-secondary);
+  --color-peach: var(--luma-peach);
+
+  /* Background and surfaces */
+  --color-background: var(--background);
+  --color-surface: var(--luma-surface);
+  --color-white: var(--luma-white);
+  --color-white-secondary: var(--luma-white-secondary);
+
+  /* Text */
+  --color-text-primary: var(--luma-text-primary);
+  --color-text-secondary: var(--luma-text-secondary);
+
+  /* shadcn semantic colors */
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  /* Typography */
+  --font-sans: var(--luma-font-primary);
+
+  /* Radius */
+  --radius-sm: var(--luma-radius-sm);
+  --radius-md: var(--luma-radius-md);
+  --radius-lg: var(--luma-radius-lg);
+  --radius-xl: var(--luma-radius-xl);
+  --radius-full: var(--luma-radius-full);
+
+  /* Shadows */
+  --shadow-card: var(--luma-shadow-card);
+  --shadow-button: var(--luma-shadow-button);
+
+  /* Hero decorative colors */
+  --color-orange-200: var(--luma-hero-orange);
+  --color-indigo-100: var(--luma-hero-indigo);
+  --color-indigo-600: var(--luma-hero-indigo-strong);
+  --color-yellow-200: var(--luma-hero-rating);
+  --color-neutral-900: var(--luma-hero-neutral);
+}
+
+/* Global styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--luma-font-primary);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  color: var(--luma-navy);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    @apply font-sans;
+  }
+}
