@@ -1,3 +1,4 @@
+// Skill categories displayed in the skills section.
 export const SKILLS = [
   {
     number: '01',
@@ -23,4 +24,5 @@ export const SKILLS = [
   },
 ] as const;
 
+// Label displayed on each skill card.
 export const CTA_LABEL = 'Explore';

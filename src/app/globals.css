@@ -24,6 +24,7 @@
   /* Text */
   --luma-text-primary: #25293a;
   --luma-text-secondary: #656770;
+  --luma-text-tertiary: #6d7384;
 
   /* Borders */
   --luma-border: #e8e8e4;
@@ -105,6 +106,7 @@
   /* Text */
   --color-text-primary: var(--luma-text-primary);
   --color-text-secondary: var(--luma-text-secondary);
+  --color-text-tertiary: var(--luma-text-tertiary);
 
   /* shadcn semantic colors */
   --color-foreground: var(--foreground);
