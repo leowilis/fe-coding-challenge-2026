@@ -84,6 +84,14 @@
   --luma-hero-indigo-strong: #4f46e5;
   --luma-hero-rating: #facc15;
   --luma-hero-neutral: #171717;
+
+  /* Shell decorative colors */
+  --luma-shell-orange: #ff704d;
+  --luma-shell-yellow: #fff1c2;
+
+  /* Dot decorative colors */
+  --luma-dot-orange: #ff704c;
+  --luma-dot-yellow: #e9d659;
 }
 
 @theme inline {
@@ -147,6 +155,14 @@
   --color-indigo-600: var(--luma-hero-indigo-strong);
   --color-yellow-200: var(--luma-hero-rating);
   --color-neutral-900: var(--luma-hero-neutral);
+
+  /* Shell decorative colors */
+  --color-shell-orange: var(--luma-shell-orange);
+  --color-shell-yellow: var(--luma-shell-yellow);
+
+  /* Dot decorative colors */
+  --color-dot-orange: var(--luma-dot-orange);
+  --color-dot-yellow: var(--luma-dot-yellow);
 }
 
 /* Global styles */
