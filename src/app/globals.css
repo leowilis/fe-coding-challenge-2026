@@ -136,7 +136,7 @@
   --color-popover-foreground: var(--popover-foreground);
 
   /* Typography */
-  --font-sans: var(--luma-font-primary);
+  --font-inter: var(--luma-font-primary);
 
   /* Radius */
   --radius-sm: var(--luma-radius-sm);
@@ -201,6 +201,6 @@ body {
   }
 
   html {
-    @apply font-sans;
+    @apply font-inter;
   }
 }
