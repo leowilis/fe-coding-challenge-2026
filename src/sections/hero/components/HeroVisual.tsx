@@ -8,15 +8,15 @@ import {
 
 export default function HeroVisual() {
   return (
-    <div className='relative w-full md:order-last md:w-[600px] md:flex-none'>
+    <div className='relative w-full md:order-last md:w-[300px] md:flex-none lg:w-[400px] xl:w-[600px]'>
       <div
         aria-hidden='true'
-        className='absolute -right-4 bottom-4 top-6 z-0 w-3/4 rounded-2xl bg-orange-200 md:-right-10 md:bottom-7 md:rounded-3xl'
+        className='absolute -right-4 bottom-4 top-6 z-0 w-3/4 rounded-2xl bg-orange-200 xl:-right-10 xl:bottom-7 xl:rounded-3xl'
       />
 
       <div
         aria-hidden='true'
-        className='absolute -left-5 bottom-3 z-0 size-20 rounded-full bg-indigo-100 md:-left-11'
+        className='absolute -left-5 bottom-3 z-0 size-20 rounded-full bg-indigo-100 xl:-left-11'
       />
 
       <Image
@@ -25,13 +25,13 @@ export default function HeroVisual() {
         width={HERO_IMAGE.width}
         height={HERO_IMAGE.height}
         priority
-        className='relative z-10 h-auto w-full rounded-2xl md:h-[600px] md:rounded-3xl md:object-cover'
+        className='relative z-10 h-auto w-full rounded-2xl md:h-[340px] md:object-cover lg:h-[460px] xl:h-[600px] xl:rounded-3xl'
       />
 
       <div
-        className={`${BADGE_BASE} -left-2 top-2 md:-left-5 md:top-4 md:gap-3 md:px-4 md:py-3 md:shadow-md`}
+        className={`${BADGE_BASE} -left-2 top-2 xl:-left-5 xl:top-4 xl:gap-3 xl:px-4 xl:py-3 xl:shadow-md`}
       >
-        <span className='rounded-sm bg-indigo-100 px-2 py-1.5 text-xs font-bold text-indigo-600 md:px-1 md:text-sm'>
+        <span className='rounded-sm bg-indigo-100 px-2 py-1.5 text-xs font-bold text-indigo-600 xl:px-1 xl:text-sm'>
           {COURSE_BADGE.value}
         </span>
 
@@ -39,11 +39,11 @@ export default function HeroVisual() {
       </div>
 
       <div
-        className={`${BADGE_BASE} -right-4 bottom-9 md:-right-14 md:gap-2.5 md:px-4 md:py-3.5 md:shadow-md`}
+        className={`${BADGE_BASE} -right-4 bottom-9 xl:-right-14 xl:gap-2.5 xl:px-4 xl:py-3.5 xl:shadow-md`}
       >
         <span
           aria-hidden='true'
-          className='flex text-xs text-yellow md:tracking-[0.4em]'
+          className='flex text-xs text-yellow xl:tracking-[0.4em]'
         >
           {'★'.repeat(RATING_BADGE.stars)}
         </span>
