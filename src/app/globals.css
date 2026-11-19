@@ -29,9 +29,6 @@
   /* Borders */
   --luma-border: #e8e8e4;
 
-  /* Typography */
-  --luma-font-primary: var(--font-inter);
-
   /* Layout */
   --container-max-width: 1280px;
   --page-padding: 24px;
@@ -135,9 +132,6 @@
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
 
-  /* Typography */
-  --font-inter: var(--luma-font-primary);
-
   /* Radius */
   --radius-sm: var(--luma-radius-sm);
   --radius-md: var(--luma-radius-md);
@@ -171,7 +165,6 @@ html {
 }
 
 body {
-  font-family: var(--luma-font-primary);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -198,9 +191,5 @@ body {
 @layer base {
   body {
     @apply bg-background text-foreground;
-  }
-
-  html {
-    @apply font-inter;
   }
 }
