@@ -10,7 +10,7 @@ export const FEATURED_COURSE = {
   },
   image: {
     src: '/assets/course/course.svg',
-    alt: 'Featured course preview',
+    alt: '',
     width: 362,
     height: 280,
   },
