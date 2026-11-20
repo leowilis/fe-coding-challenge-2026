@@ -2,7 +2,7 @@ export const CTA = {
   title: 'What will you learn next?',
   description: 'Start with one course. Build from there.',
   actions: {
-    primary: { label: 'Explore all courses', href: '#courses' },
+    primary: { label: 'Explore all courses', href: '#featured-course' },
     secondary: { label: 'Join Luma', href: '#contact' },
   },
 } as const;

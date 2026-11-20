@@ -81,23 +81,21 @@ export default function NavbarMobile() {
           ))}
 
           <li>
-            <Link
-              href='/login'
-              onClick={closeMenu}
+            <span
               className={buttonVariants({
                 variant: 'default',
                 size: 'lg',
                 className:
-                  'w-full rounded-sm px-5 py-5.5 font-bold shadow-button transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-brand-hover hover:shadow-lg active:translate-y-0 active:shadow-button focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand',
+                  'w-full rounded-sm px-5 py-5.5 font-bold shadow-button transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-brand-hover hover:shadow-lg',
               })}
             >
               Log in
-            </Link>
+            </span>
           </li>
 
           <li>
             <Link
-              href='#courses'
+              href='#featured-course'
               onClick={closeMenu}
               className={buttonVariants({
                 variant: 'default',

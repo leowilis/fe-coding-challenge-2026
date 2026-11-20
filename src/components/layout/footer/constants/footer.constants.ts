@@ -8,7 +8,7 @@ export const FOOTER_COLUMNS = [
   {
     title: 'Explore',
     links: [
-      { label: 'Courses', href: '#courses' },
+      { label: 'Courses', href: '#featured-course' },
       { label: 'Categories', href: '#skills' },
       { label: 'Instructors', href: '#people' },
       { label: 'For Teams', href: '#' },

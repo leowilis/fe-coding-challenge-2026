@@ -33,15 +33,12 @@ export default function NavbarDesktop() {
         </ul>
 
         <div className='flex items-center gap-6 justify-self-end lg:gap-6'>
-          <Link
-            href='/login'
-            className='whitespace-nowrap text-sm font-medium text-text-secondary transition-colors duration-200 hover:text-brand focus-visible:rounded-sm focus-visible:text-brand focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand'
-          >
+          <span className='whitespace-nowrap text-sm font-medium text-text-secondary transition-colors duration-200 hover:text-brand'>
             Log in
-          </Link>
+          </span>
 
           <Link
-            href='#courses'
+            href='#featured-course'
             className={buttonVariants({
               size: 'lg',
               className:

@@ -15,7 +15,8 @@ export default function TestimonialQuote() {
         aria-hidden='true'
         width={QUOTE_ICON_SIZE.width}
         height={QUOTE_ICON_SIZE.height}
-        className='h-auto w-6 md:w-7'
+        className='w-6 md:w-7'
+        style={{ height: 'auto' }}
       />
       <blockquote className='mt-4 text-[25px] leading-[1.5] font-semibold text-text-primary md:text-2xl xl:max-w-[750px]'>
         <p>{quote}</p>

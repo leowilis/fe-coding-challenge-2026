@@ -1,6 +1,6 @@
 export const NAVIGATION_ITEMS = [
-  { label: 'Courses', href: '#courses' },
-  { label: 'For Teams', href: '#teams' },
-  { label: 'Community', href: '#community' },
-  { label: 'About', href: '#about' },
+  { label: 'Courses', href: '#featured-course' },
+  { label: 'For Teams', href: '#contact' },
+  { label: 'Community', href: '#people' },
+  { label: 'About', href: '#how-it-works' },
 ] as const;

@@ -23,7 +23,7 @@ export default function HeroContent() {
 
       <div className='mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row md:mt-7 xl:mt-9 xl:gap-4'>
         <Link
-          href='#courses'
+          href='#featured-course'
           className={buttonVariants({
             size: 'lg',
             className:
