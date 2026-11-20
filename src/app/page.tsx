@@ -6,6 +6,8 @@ import Works from '@/sections/works/Works';
 import Testimonial from '@/sections/testimonial/Testimonial';
 import People from '@/sections/people/People';
 import Contact from '@/sections/contact/Contact';
+import FinalCta from '@/sections/cta/FInalCta';
+import Footer from '@/components/layout/footer/Footer';
 
 export default function Home() {
   return (
@@ -20,7 +22,10 @@ export default function Home() {
         <Testimonial />
         <People />
         <Contact />
+        <FinalCta />
       </main>
+
+      <Footer />
     </>
   );
 }
