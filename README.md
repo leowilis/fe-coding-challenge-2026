@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Luma — Learning Platform
+
+A responsive learning platform landing page built as part of the Buzzvel Frontend Coding Challenge.
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- Base UI
+- Lucide React
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 22+
+- npm
+
+### Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/leowilis/fe-coding-challenge-2026.git
+cd fe-coding-challenge-2026
+npm install
+```
+
+### Development
+
+Start the local development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create an optimized production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Run the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Code Quality
 
-## Deploy on Vercel
+Run ESLint:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run lint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Run TypeScript checks:
+
+```bash
+npx tsc --noEmit
+```
+
+## Key Decisions
+
+- **Next.js App Router:** Used for the application structure and a server-first rendering approach.
+- **Server Components by default:** Client Components are used only where browser-side interactivity is required.
+- **TypeScript:** Provides type safety and improves maintainability.
+- **Tailwind CSS v4:** Used for responsive styling and consistent design implementation.
+- **Component-based architecture:** Sections and shared UI components are organized for easier maintenance.
+- **Form validation:** React Hook Form and Zod provide client-side form validation.
+- **Accessibility:** Semantic HTML, accessible labels, keyboard interactions, and visible focus states are considered throughout the interface.
+- **Navigation:** Section links use valid page anchors to support navigation without introducing unnecessary routes.
+
+## Known Gaps
+
+- This is currently a frontend-only implementation. No backend, database, or authentication service is connected.
+- The login entry is visual only; authentication is not implemented.
+- The contact form includes client-side validation, but actual message delivery requires a backend integration.
+- For Teams currently navigates to Contact, Community to People, and About to How It Works. These are temporary destinations because dedicated sections or pages are not yet implemented.
+- Dynamic course management and persistent user data are outside the current scope.
+
+## Time Spent
+
+Approximately **30 hours**, spread across November 14–20, 2026. Daily development time varied depending on the implementation and refinement tasks.
+
+## AI Tools
+
+**OpenAI ChatGPT** was used as a development assistant for:
+
+- Technical planning and implementation guidance.
+- Code review and debugging.
+- Accessibility and performance improvement suggestions.
+- Documentation support.
+
+All implementation decisions and final code changes were reviewed and tested as part of the development process.
+
+---
+
+Built for the Buzzvel Frontend Coding Challenge.
