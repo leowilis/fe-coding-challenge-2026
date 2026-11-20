@@ -28,7 +28,7 @@ export default function PeopleContent() {
           variant: 'outline',
           size: 'lg',
           className:
-            'mt-7 max-w-[300px] rounded-sm py-6.5 text-base font-semibold md:h-12 md:py-0 xl:mt-10 xl:h-[50px] xl:max-w-[300px]',
+            'mt-7 max-w-[300px] rounded-sm py-6.5 text-base font-semibold md:h-12 md:py-0 xl:mt-10 md:max-w-[250px] xl:h-[50px] xl:max-w-[300px]',
         })}
       >
         {cta.label}
