@@ -9,9 +9,11 @@
   --luma-primary: #3157f6;
   --luma-primary-hover: #1735e3;
   --luma-navy: #202640;
+  --luma-darkblue: #171b2c;
 
   /* Accent colors */
   --luma-yellow: #fff0a8;
+  --luma-yellow-primary: #fff1c2;
   --luma-yellow-secondary: #ffee7e;
   --luma-peach: #ffb995;
 
@@ -96,9 +98,11 @@
   --color-brand: var(--luma-primary);
   --color-brand-hover: var(--luma-primary-hover);
   --color-navy: var(--luma-navy);
+  --color-darkblue: var(--luma-darkblue);
 
   /* Accent colors */
   --color-yellow: var(--luma-yellow);
+  --color-yellow-primary: var(--luma-yellow-primary);
   --color-yellow-secondary: var(--luma-yellow-secondary);
   --color-peach: var(--luma-peach);
 
